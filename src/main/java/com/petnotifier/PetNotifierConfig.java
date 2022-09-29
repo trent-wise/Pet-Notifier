@@ -1,12 +1,14 @@
-package com.example;
+package com.petnotifier;
 
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
-@ConfigGroup("example")
-public interface ExampleConfig extends Config
+@ConfigGroup(PetNotifierConfig.GROUP)
+public interface PetNotifierConfig extends Config
 {
+	String GROUP = "petnotifier";
+
 	@ConfigItem(
 		keyName = "greeting",
 		name = "Welcome Greeting",

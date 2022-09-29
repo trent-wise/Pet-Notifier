@@ -1,13 +1,13 @@
-package com.example;
+package com.petnotifier;
 
 import net.runelite.client.RuneLite;
 import net.runelite.client.externalplugins.ExternalPluginManager;
 
-public class ExamplePluginTest
+public class PetNotifierTest
 {
 	public static void main(String[] args) throws Exception
 	{
-		ExternalPluginManager.loadBuiltin(ExamplePlugin.class);
+		ExternalPluginManager.loadBuiltin(PetNotifierPlugin.class);
 		RuneLite.main(args);
 	}
 }
